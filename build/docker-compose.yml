@@ -5,6 +5,6 @@ services:
       context: ${DIR_DFILES}
       dockerfile: ./dockerfile
     env_file:
-      - ./.env
+      - ./.env.yml
     ports:
       - ${PUERTO}:80

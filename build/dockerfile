@@ -1,0 +1,8 @@
+FROM nginx
+
+COPY ../app_next/* /usr/share/nginx/html
+
+# copiando el directorio appdfas_next al d.publicacion de ngnix
+# COPY ./index.html /usr/share/nginx/html
+
+RUN /etc/init.d/nginx start
